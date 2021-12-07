@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+ 
+  <div id="welcome" class="welcome">
+    <head>
+    <!-- Import the webpage's css file -->
+      <link rel="stylesheet" href="/style.css" />
+      
+    <!-- Import the webpage's javascript file -->
+      <script src="/script.js" defer></script>
+      
+    <!-- Import typeface fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&display=swap" rel="stylesheet">
+    </head>
+    
+<!-- WELCOME PAGE -->     
+    <body>
+      
+      <h1 class="glow"> B U N G E E </h1>
+      
+      <p>Font designer David Jonathan Ross brings you the ultimate typeface for <br>store front signage. Bungee is a font family that celebrates urban signage. <br>It wrangles the Latin alphabet to work vertically  as well  as horizontally. <br>Hit continue to design your own sign!</p>
+      
+      <button id="toggle" class="buttonGlow">CONTINUE TO SITE!</button>
+      
+    </body>
+  </div>
+  
+  
+<!-- MAIN PAGE -->  
+  <div id="main" class="main">  
+    
+  <!-- Header -->  
+    <head>
+      <h2 class="staticGlow"> Bungee </h2>
+    </head>
+    
+    <body>
+      <div class="container">
+        
+  <!-- Display Panel -->         
+        <div id= "displaypanel" class="displaypanel">  
+          <display  id="output" class="output" style="word-break: break-all; word-wrap: break-word;"></display> 
+        </div>
+        
+  <!-- Edit Panel -->  
+      <div id="editpanel" class="editpanel"> 
+        
+        <div class="buttoncontainer2" width="50%" height="10px" backgroundColor="none"></div>
+        
+      <!-- Column 1: Text input box and color well -->  
+        <div class="buttoncontainer2" width="50%" height="50px" backgroundColor="none">
+          <input type="text" placeholder=" Your text here..." id="myInput"></input>
+          <button id="buttonCreate" class="button" onclick="showCaption()">Create!</button> 
+          <label for="colorWell" class="label">Color:</label>
+          <input type="color" class="colorwell" value="#000000" id="colorWell" >
+        </div>
+      
+        <div class="buttoncontainer2" width="50%" height="10px" backgroundColor="none"></div>
+        
+      <!-- Column 2: Font family buttons --> 
+        <p2>Change your font style:</p2>
+        <div class="buttoncontainer" width="50%" height="50px" backgroundColor="none">
+          <button id="buttonRegular" class="button" style="font-family: Bungee"onclick="changeFontRegular()">Regular</button> 
+          <button id="buttonOutline" class="button" style="font-family: Bungee Outline"onclick="changeFontOutline()">Outline</button> 
+          <button id="buttonInline" class="button" style="font-family: Bungee Inline"onclick="changeFontInline()">Inline</button> 
+          <button id="buttonHairline" class="button" style="font-family: Bungee Hairline"onclick="changeFontHairline()">Hairline</button> 
+          <button id="buttonShade" class="button" style="font-family: Bungee Shade"onclick="changeFontShade()">Shade</button> 
+        </div>
+       
+        <div class="buttoncontainer2" width="50%" height="30px" backgroundColor="none"></div>
+        
+      <!-- Column 3: Display text orientation buttons -->  
+        <p2>Change the orientation of your text:</p2>
+        <div class="buttoncontainer2" width="50%" height="50px" backgroundColor="none">
+          <button id="horizontalButton" class = "button" type="button" onclick="horizontalDisplay()" > Horizontal Text </button>
+          <button id="stackedButton" class = "button" type="button" onclick="stackedDisplay()" > Stacked Text </button>
+          <button id="verticalButton" class = "button" type="button" onclick="verticalDisplay()" > Vertical Text </button>
+        </div>
+        
+        <div class="buttoncontainer2" width="50%" height="30px" backgroundColor="none"></div>
+      
+      <!-- Column 3: Font size increase and decrease buttons -->   
+        <p2>Adjust your font size:</p2>
+        <div class="buttoncontainer2" width="50%" height="50px" backgroundColor="none">
+          <button id="increaseFontSize" class = "button" type="button" onclick="increaseFontSize()" > + </button>
+          <button id="decreaseFontSize" class = "button" type="button" onclick="decreaseFontSize()" > – </button>
+        </div>
+        
+        </div>
+      </div>
+    </body>
+  </div>
+</html>
