@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+
+/* WELCOME PAGE STYLES */
+.welcome {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* glow animation */
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+.buttonGlow {
+  background-color: transparent;
+  border: .025px solid #ff4da6;
+  color: #fffaf1;
+  margin-left: 41%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Bungee';
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 2px;
+  box-shadow: 0px 0px 40px #ff4da6;
+  border-radius: 12px;
+}
+
+.buttonGlow:hover{
+  background-color: #ff4da6;
+  color: white;
+  border: 2px solid #ff4da6;
+}
+
+/* MAIN PAGE STYLES*/
+.main {
+  z-index: 9;
+  background-color: black;
+  width: 100%;
+  height: 700px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.staticGlow{
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #ff4da6,
+    0 0 21px #ff4da6,
+    0 0 42px #ff4da6,
+    0 0 82px #ff4da6;
+}
+
+/* containing the display and edit panels*/
+.container {
+  display: flex;
+  height: 100%;
+  background-color: black;
+  justify-content: space-evenly;
+}
+
+.displaypanel {
+  background-color: white;
+  height: 100%; 
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 0px;
+  text-align: center;
+  justify-content: center;  
+}
+
+.editpanel {
+  background-color: transparent;
+  height: 100%;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 0px;
+}
+
+/* button containers make it easier to organize buttons and space them evenly*/
+.buttoncontainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+
+.buttoncontainer2{
+  display: flex;
+  padding: 5px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+/* TAGS */
+p{
+  font-size: 18px;
+  font-family: "Bungee Hairline";
+  text-align: center;
+  color: white;
+  margin: 50px;
+  
+}
+
+p2{
+  font-size: 20px;
+  font-family: "Bungee";
+  text-align: center;
+  color: White;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: "Bungee Outline";
+  text-align: center;
+  margin: 0px;
+  padding-top: 200px;
+  color: #fffaf1;
+}
+
+h2 {
+  font-size: 100px;
+  font-family: "Bungee Outline";
+  text-align: center;
+  margin: 0px;
+  color: #ff4da6;
+}
+
+display {
+  font-family: 'Bungee';
+  color: #000000;
+  margin: 10px;
+  padding-top: 100px;
+  font-size: 100px;
+  font-weight: normal;
+  font-style: normal;
+  /*writing-mode: vertical-rl;
+  text-orientation: upright;*/
+}
+
+/* BUTTON APPEARANCES */
+.button{
+  background-color: #ff4da6;
+  border: none;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Bungee';
+  display: inline-block;
+  font-size: 20px;
+  margin: 6px; 
+}
+.button:hover {
+  -webkit-box-shadow: inset 0 0 10px #000000;
+}
+
+/* STYLE OF COLORWELL BUTTON AND LABEL */
+.label {
+  font-family: 'Bungee';
+  color: white;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.colorwell {
+  -webkit-appearance: none;
+  outline: none;
+  box-shadow: none;
+  margin: 2px;
+  background-color: #ff4da6;
+  border-color:none;
+  padding: 10px;
+  height: 60px;
+  width: 90px;
+  }
+
+/* INPUT TEXTBOX */
+input[type='text'] {
+  -webkit-appearance: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  outline: none;
+  box-shadow: none;
+  padding-left: 10px;
+  margin: 2px;
+  background-color: #DDD;
+  border-color: #DDD;
+  height: 50px;
+  width: 300px;
